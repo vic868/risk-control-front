@@ -1,0 +1,115 @@
+/* ============================================================
+   全局基础样式 + 共享页面骨架
+   ============================================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --page-bg: #f0f2f5;
+  --card-bg: #ffffff;
+  --card-radius: 10px;
+  --card-shadow: 0 1px 2px rgba(0, 21, 41, 0.03), 0 2px 8px rgba(0, 21, 41, 0.04);
+  --card-border: 1px solid #eef0f3;
+  --text-primary: #1f1f1f;
+  --text-secondary: #595959;
+  --text-muted: #8c8c8c;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  font-size: 14px;
+  line-height: 1.5715;
+  color: var(--text-primary);
+  background-color: var(--page-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+/* ---------- 共享页面骨架：白卡片 + 搜索栏 ---------- */
+
+.page-container {
+  background: var(--card-bg);
+  border: var(--card-border);
+  border-radius: var(--card-radius);
+  padding: 24px;
+  box-shadow: var(--card-shadow);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* 把主操作（新增）推到最右侧，与查询/重置分开 */
+.search-bar .push-right {
+  margin-left: auto;
+}
+
+.search-bar .ant-input-affix-wrapper,
+.search-bar .ant-input {
+  width: 220px;
+}
+
+.search-bar .ant-select {
+  width: 150px;
+}
+
+/* ---------- 表格微调 ---------- */
+
+.ant-table-wrapper .ant-table {
+  border-radius: 8px;
+}
+
+.ant-table-thead > tr > th {
+  font-weight: 600 !important;
+  color: var(--text-secondary) !important;
+  font-size: 13px !important;
+  letter-spacing: 0.2px;
+}
+
+.ant-table-tbody > tr > td {
+  color: var(--text-primary);
+}
+
+/* 操作列链接式按钮 */
+.ant-table-tbody .ant-btn-link {
+  padding: 0 4px;
+  height: auto;
+}
+
+/* ---------- 滚动条 ---------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4d7dc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b6bac0;
+}
