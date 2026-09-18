@@ -45,6 +45,11 @@ version: 0.0.0
 
 ---
 
+
+### 📋 [操作说明](doc/README.md)
+
+
+
 ## 🧩 功能模块
 
 > [!tip] 共 **10** 个子页面，默认首页重定向至 **策略管理**
@@ -73,13 +78,10 @@ version: 0.0.0
 
 > [!example] 黑白名单支持
 
-| 名单类型 | 路径 | 说明 |
-|:---|:---|:---|
-| ⚫ 黑名单-用户 | `/namelist/black-user` | 黑名单用户增删改查 |
-| ⚫ 黑名单-IP | `/namelist/black-ip` | 黑名单 IP 增删改查 |
-| ⚫ 黑名单-设备 | `/namelist/black-device` | 黑名单设备增删改查 |
-| ⚪ 白名单-用户 | `/namelist/white-user` | 白名单用户增删改查 |
+| 名单类型     | 说明          |
+| :------- | :---------- |
+| ⚫ 黑名单-用户 | 黑名单用户增删改查   |
+| ⚫ 黑名单-IP | 黑名单 IP 增删改查 |
+| ⚫ 黑名单-设备 | 黑名单设备增删改查   |
+| ⚪ 白名单-用户 | 白名单用户增删改查   |
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
